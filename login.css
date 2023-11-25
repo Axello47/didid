@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 618px;
+    background:url("online-shopping-1082727_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 123%;
+    background-position: center;
+}
+
+.login-box {
+    width: 300px;
+    color: #fff;
+    display: none;
+    background: transparent;
+    border: 2px solid #92887A;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 10px 0px;
+    padding: 30px 40px;
+    border-radius: 20px;
+    animation: zoomOut 0.7s ease-out;
+}
+
+.login-box h1{
+    font-size: 40px;
+    text-align: center
+}
+
+.input-box{
+
+    width: 95%;
+    height: 60px;
+    margin:  30px 0px;
+}
+
+.input-box input{
+    padding: 2px;
+    width: 99%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #b9b9b9;
+    border-radius: 40px;
+    font-size: 20px;
+    color: #fff;
+    padding-right: 12px;
+}
+
+.input-box input::placeholder{
+    color: #fff;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.input-box i{
+    position: absolute;
+    right: 50px;
+    font-size: 20px;
+    justify-content: space-between;
+    transform: translateY(-210%);
+}
+
+.login-box .remember{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.remember label input{
+   accent-color: #fff;
+   margin-right: 3px;
+}
+
+.remember a {
+    color: #fff;
+    text-decoration: none;
+    transition: .2s ease-in-out;
+}
+
+.remember a:hover{
+    color: #27A7F7;
+}
+
+.login-box .btn button{
+    width: 80%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    background-color:rgb(255, 255, 255) ;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 25px;
+    color: #27A7F7;
+    font-weight: bold;
+    transition: .4s ease-in-out;
+}
+
+.login-box .btn button:hover{
+    background-color: #27A7F7;
+    color: #fff;
+}
+
+.login-box .dont{
+    font-size: 15px;
+    text-align: center;
+    margin: 15px 10px 0px 10px;
+}
+
+.login-box .dont a{
+    margin: 6px;
+    color: #fff;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+.login-box .dont a:hover{
+   font-size: 16px;
+   color: #27A7F7;
+}
+
+
+
+
+@keyframes zoomOut {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+          /* second formm !!!!!!!!!!!!!! */
+
+
+
+          .login-form {
+        width: 300px;
+        color: #fff;
+        display: none;
+        margin-top: 20px;
+        background: transparent;
+        border: 2px solid #92887A;
+        backdrop-filter: blur(5px);
+        box-shadow: 0px 0px 10px 0px;
+        padding: 30px 40px;
+        border-radius: 20px;
+        animation: zoomOut 0.7s ease-out;
+          }
+      
+          .login-form label {
+            display: block;
+            margin-bottom: 8px;
+          }
+      
+          .login-form input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+          }
+      
+          .login-form button {
+            width: 300px;
+            background-color: #ffffff;
+            color: #27A7F7;
+            padding: 10px;
+            border: none;
+            border-radius: 16px;
+            cursor: pointer;
+            transition: .4s ease-in-out;
+          }
+      
+          .login-form button:hover {
+            background-color: #27A7F7;
+            color: #ffffff;
+          }
+          
+         .login-form .have{
+            margin-top: 20px;
+            margin-left: 40px;
+            justify-content: space-between;
+          }
+
+          .login-form .have a{
+            font-size: 20px;
+            color: #ffffff;
+            text-decoration: none;
+            transition: .5s ease-in-out;
+          }
+
+          .login-form .have a:hover{
+            color: rgb(0, 29, 243);
+          }
+
+          .login-form .have p a{
+            margin: 10px;
+          }
+
+
+
+             /* !!!!!!!!!!!!! button !!!!!!!!!!!! */
+
+
+    .super-btn button{
+        position: absolute;
+        left: 43%;
+        top: 03%;
+        height: 50px;
+        width: 200px;
+        color: #45a049;
+        font-size: 20px;
+        border-radius: 20px;
+        border: none;
+        transition: .4s;
+    }
+    
+    .super-btn button:hover{
+        background-color: #45a049;
+        color: #ffffff;
+        transform: translateY(-0.25em);
+        box-shadow: 0 0.5em 0.5em 0em rgba(0, 0, 255, 0.5);
+      
+    }
+
+
+    
