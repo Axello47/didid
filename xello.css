@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+body{
+  background-image: url("backone.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .nav{
     position: fixed;
     top: 0;
@@ -12,7 +17,9 @@
     padding: 0;
     width: 100%;
     height: 60px;
-    background: #C300DA;
+    background: url("colors.jpg");
+    filter: brightness(110%);
+    box-shadow: 0px 0px 10px 0px #6b6b6b;
     display: flex;
 
 
@@ -33,7 +40,7 @@
         text-align: center;
         line-height: 52px;
         border: 2px solid transparent;
-        color: #3b3535;
+        color: #f5f5f5;
         font-size: 25px;
         transition: 0.3s;
       }
@@ -45,7 +52,7 @@
       }
 
 .links{
-    margin-left: 20px;
+    margin-left: 350px;
 }
 .nav .links a{
     text-decoration: none;
@@ -62,8 +69,15 @@
     width: 380px;
     display: flex;
     align-items: center;
-    margin-left: 340px;
-    color: transparent;
+    position: relative;
+    left: 25%;
+}
+
+.nav .search i{
+  position: relative;
+  right: 10%;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .nav .search input{
@@ -75,18 +89,6 @@
     padding-left: 10px;
     font-size: 20px;
     
-}
-
-.nav .search i{
-    background: #737274;
-    margin-top: 25px;
-    border-radius: 20px;
-     padding-right: 40px;
-    font-size: 20px;
-    transform: translate(-50%,-50%);
-    font-size: 24px;
-    color: #ffd52d;
-    transition: .2s;
 }
 
 a {
@@ -115,18 +117,23 @@ a:hover::before {
 }
 
 .slide-bar{
-
+    border-right: 2px solid;
    position: fixed;
     width: 60px;
-    background-color: #12bd09;
+    background-color:transparent;
+    backdrop-filter: blur(20px);
     height: 100hv;
     overflow: hidden;
     transition: .3s;
+    z-index: 1;
 }
 
 .slide-bar:hover{
+  /* background-color: #ffffff; */
+  backdrop-filter: blur(100px);
   width: 140px;
   height: 100%;
+  box-shadow: 0px 0px 30px rgba(246, 246, 250, 0.5);
 }
 
 .slide-bar ul{
@@ -144,7 +151,7 @@ a:hover::before {
 }
 
 .slide-bar ul li a{
-  position: relative;
+  position: sticky;
   display: flex;
   white-space: nowrap;
 
@@ -157,7 +164,7 @@ a:hover::before {
   font-size: 25px;
   min-width: 60px;
   height: 60px;
-  color: #7D7BC2;
+  color: #D702CF;
 }
 
 .slide-bar ul li .text{
@@ -165,7 +172,7 @@ a:hover::before {
   display: flex;
   align-items: center;
   font-size: 1em;
-  font-weight: 200px;
+  font-weight: bold;
   text-transform: capitalize;
 }
 
@@ -187,11 +194,13 @@ a:hover::before {
   width: 200px;
   height: 300px;
   margin: 20px;
+  background-color: #f0f0f0;
   border: 2px solid;
   border-radius: 20px;
   display: flex;
   flex: 0 0 calc(25% - 60px);
   transition: .4s;
+  position: static;
 
 }
 
@@ -206,12 +215,52 @@ a:hover::before {
   padding-right: 20px;
 }
 .defcard:hover{
-  box-shadow: 0px 0px 20px 0px #ff47f9;
+  box-shadow: 0px 0px 10px 5px #828282;
 }
 
 .defcard.pic{
-  background-color: #f0f0f0; /* Background color for the first section */
-  height: 100%; /* Take full height of the card */
-  width: 50%; /* Take 50% width of the card */
-  float: left; /* Float left to position it on the left side */
+  background-color: #f0f0f0; 
+  height: 100%; 
+  width: 50%;
+  float: left; 
+}
+
+.defcard h2{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 40%;
+  margin: 0px 100px 0px 20px;
+}
+
+.defcard button{
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 53%;
+  background-color: #ff47f9;
+  margin-left: 70px;
+  border-radius: 10px;
+  border: 1px solid;
+  transition: .3s;
+}
+
+.defcard button:hover{
+   transform: scale(1.1);
+   box-shadow: 0px 0px 10px 0px #ff71e0;
+}
+
+.defcard span{
+  margin: 2px;
+  font-size: 20px;
+}
+
+.defcard p{
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
 }
