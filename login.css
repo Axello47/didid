@@ -16,6 +16,8 @@ body{
     background-position: center;
 }
 
+
+
 .login-box {
     width: 300px;
     color: #fff;
@@ -258,7 +260,7 @@ body{
 
     .navi img{
       position: absolute;
-      width: 25em;
-      top: -3%;
-      left: -8%;
+      width: 12em;
+      top: 3%;
+      left: 2%;
     }

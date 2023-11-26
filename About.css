@@ -6,7 +6,7 @@
 }
 
 body{
-  background-image: url("backone.jpg");
+   background-image: url("cheated.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -117,8 +117,9 @@ a:hover::before {
 }
 
 .slide-bar{
+    margin-top: 60px;
     border-right: 2px solid;
-   position: fixed;
+    position: fixed;
     width: 60px;
     background-color:transparent;
     backdrop-filter: blur(20px);
@@ -180,84 +181,4 @@ a:hover::before {
   width: 100%;
   position: absolute;
   bottom: 0;
-}
-
-.cards{
-  margin: 60px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-}
-
-.defcard{
-  width: 200px;
-  height: 300px;
-  margin: 20px;
-  background-color: #f0f0f0;
-  border: 2px solid;
-  border-radius: 20px;
-  display: flex;
-  flex: 0 0 calc(25% - 60px);
-  transition: .4s;
-  position: static;
-
-}
-
-.defcard img{
-  margin: 0;
-  border-top-left-radius: 18px;
-  border-top-right-radius: 18px;
-}
-
-.defcard .text{
-  margin-top: 160px;
-  padding-right: 20px;
-}
-.defcard:hover{
-  box-shadow: 0px 0px 10px 5px #828282;
-}
-
-.defcard.pic{
-  background-color: #f0f0f0; 
-  height: 100%; 
-  width: 50%;
-  float: left; 
-}
-
-.defcard h2{
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 40%;
-  margin: 0px 100px 0px 20px;
-}
-
-.defcard button{
-  width: 100px;
-  height: 40px;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 53%;
-  background-color: #ff47f9;
-  margin-left: 70px;
-  border-radius: 5px;
-  border: 1px solid;
-  transition: .3s;
-}
-
-
-
-.defcard span{
-  margin-right: 6px;
-  font-size: 20px;
-}
-
-.defcard p{
-  font-size: 20px;
-  font-weight: bold;
-  color: #ffffff;
 }
