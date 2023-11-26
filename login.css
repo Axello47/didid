@@ -22,7 +22,7 @@ body{
     display: none;
     background: transparent;
     border: 2px solid #92887A;
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(15px);
     box-shadow: 0px 0px 10px 0px;
     padding: 30px 40px;
     border-radius: 20px;
@@ -39,24 +39,28 @@ body{
     width: 95%;
     height: 60px;
     margin:  30px 0px;
+    
 }
 
 .input-box input{
-    padding: 2px;
+  padding-left: 10px;
+  padding-right: 50px;
+
     width: 99%;
-    height: 50px;
+    height: 45px;
     background: transparent;
     border: none;
     outline: none;
     border: 2px solid #b9b9b9;
-    border-radius: 40px;
     font-size: 20px;
     color: #fff;
     padding-right: 12px;
+    border-radius: 30px;
 }
 
 .input-box input::placeholder{
     color: #fff;
+    padding-left: 5px;
     font-size: 18px;
     justify-content: center;
 }
@@ -66,7 +70,7 @@ body{
     right: 50px;
     font-size: 20px;
     justify-content: space-between;
-    transform: translateY(-210%);
+    transform: translateY(-180%);
 }
 
 .login-box .remember{
